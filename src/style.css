@@ -56,13 +56,22 @@ html {
     letter-spacing: 0.1rem;
   }
   
+  .overlay-image {
+    position: absolute;
+    width: 22.375rem;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 1;
+  }
   header.masthead {
     height: 65vh;
     position: relative;
     overflow: hidden;
     padding-top: calc(7rem + 72px);
     padding-bottom: 7rem;
-    background-image: url(../assets/img/ESCRITORIO1.jpg);
+    background-image: url(../assets/img/PERFIL1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
@@ -78,56 +87,29 @@ html {
   header.masthead .masthead-content .masthead-subheading {
     font-size: 2rem;
   }
-  /* header.masthead .bg-circle {
-    z-index: -1;
-    position: absolute;
-    border-radius: 100%;
-    background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
-  }
-  header.masthead .bg-circle-1 {
-    height: 90rem;
-    width: 90rem;
-    bottom: -55rem;
-    left: -55rem;
-  }
-  header.masthead .bg-circle-2 {
-    height: 50rem;
-    width: 50rem;
-    top: -25rem;
-    right: -25rem;
-  }
-  header.masthead .bg-circle-3 {
-    height: 20rem;
-    width: 20rem;
-    bottom: -10rem;
-    right: 5%;
-  }
-  header.masthead .bg-circle-4 {
-    height: 30rem;
-    width: 30rem;
-    top: -5rem;
-    right: 35%;
-  } */
 
   .modal-container {
-    text-align: center;
+    display: flex; /* Activa el flexbox */
+    justify-content: space-between; /* Espacio entre los botones */
+    align-items: center; /* Alinea los botones verticalmente */
   }
   
   .modal-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin: 0 10px; /* Añade espacio entre los botones */
+    padding: 5px 3px; /* Ajusta el tamaño del botón */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    border: none; /* Elimina el borde */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición de color */
   }
   
   .modal-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Color de fondo al pasar por encima */
   }
-  
+
   .modal {
     display: none;
     position: fixed;
@@ -165,6 +147,51 @@ html {
   
   .modal-close:hover {
     color: #000;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .social-icons i {
+    font-size: 3.1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons .fa-brands.fa-square-facebook {
+    color: #1877F2;
+  }
+  
+  .social-icons .fa-brands.fa-square-instagram {
+    color: #E4405F;
+  }
+  
+  .social-icons .fa-brands.fa-tiktok {
+    color: #000000;
+  }
+  
+  .social-icons .fa-brands.fa-square-youtube {
+    color: #FF0000;
+  }
+  
+  .social-icons .fa-brands.fa-threads {
+    color: #000000;
+  }
+  
+  .social-icons .fa-brands.fa-x-twitter {
+    color: #000000;
+  }
+  
+  .social-icons .fa-solid.fa-location-dot {
+    color: #EA4335;
   }
   
   /* Animación de entrada */

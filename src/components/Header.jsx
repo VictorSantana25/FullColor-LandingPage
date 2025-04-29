@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 
+
 const Header = (props) => {
     return (
-        <header className="masthead text-center text-white">
+        <header className="masthead text-center text-white" id='page-top'>
             <div className="masthead-content">
                 <div className="container px-5">
                     <h1 className="masthead-heading mb-0">{props.title}</h1>

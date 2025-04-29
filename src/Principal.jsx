@@ -9,14 +9,15 @@ const Principal = () => {
             {/* Navigation */}
             <Navigation />
             {/*  Header */}
-            <Header title={"    "} subtitle={"   "} btninfo={{ text: 'Learn more', url: '#scroll' }} />
+            <Header title={<img className="overlay-image" src="../assets/img/Logo.png" alt="Logo" />} subtitle={""} />
             {/* Content section 1 */}
-            <ContentSection position={"right"} title={"Quiénes somos"} description={<div className="modal-container">
+            <ContentSection position={"right"} title={"Quiénes somos, Misión y Visión"} description={<div className="modal-container">
+  {/* BOTÓN 1 - QUIÉNES SOMOS */}
   <button 
     className="modal-button" 
     onClick={() => document.getElementById('quienesModal').style.display = 'block'}
   >
-     Conócenos dando click aquí
+    Quiénes Somos
   </button>
 
   <div 
@@ -49,47 +50,102 @@ const Principal = () => {
       <p>
         Esperamos tener el gusto de atenderl@.
       </p>
+    </div>
+  </div>
 
-      <h3>MISIÓN</h3>
+  {/* BOTÓN 2 - MISIÓN */}
+  <button 
+    className="modal-button" 
+    onClick={() => document.getElementById('misionModal').style.display = 'block'}
+  >
+    Nuestra Misión
+  </button>
+
+  <div 
+    id="misionModal" 
+    className="modal"
+    onClick={(e) => {
+      if (e.target.id === 'misionModal') {
+        document.getElementById('misionModal').style.display = 'none';
+      }
+    }}
+  >
+    <div className="modal-content">
+      <span 
+        className="modal-close" 
+        onClick={() => document.getElementById('misionModal').style.display = 'none'}
+      >
+        &times;
+      </span>
+
+      <h2>MISIÓN</h2>
       <p>
         Brindar el mejor servicio de publicidad en Tumaco y sus alrededores, con los más altos estándares de calidad, convirtiéndonos así en la mejor solución a las necesidades de nuestros clientes.
       </p>
+    </div>
+  </div>
 
-      <h3>VISIÓN</h3>
+  {/* BOTÓN 3 - VISIÓN */}
+  <button 
+    className="modal-button" 
+    onClick={() => document.getElementById('visionModal').style.display = 'block'}
+  >
+    Nuestra Visión
+  </button>
+
+  <div 
+    id="visionModal" 
+    className="modal"
+    onClick={(e) => {
+      if (e.target.id === 'visionModal') {
+        document.getElementById('visionModal').style.display = 'none';
+      }
+    }}
+  >
+    <div className="modal-content">
+      <span 
+        className="modal-close" 
+        onClick={() => document.getElementById('visionModal').style.display = 'none'}
+      >
+        &times;
+      </span>
+
+      <h2>VISIÓN</h2>
       <p>
         Establecer en Tumaco un servicio de publicidad de alta calidad que satisfaga las necesidades de nuestros clientes y les permita mostrarse en cualquier lugar del mundo a través de nuestros productos.
       </p>
     </div>
   </div>
 </div>
-} image={"assets/img/01.jpg"} />
+} image={"../assets/img/quienesSomos.png"} />
+
             {/* Content section 2 */}
-            <ContentSection title={"Encuéntranos en nuestras redes:"} description={<div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center", marginTop: "2rem" }}>
-  <a href="https://www.facebook.com/fullcolorpi/" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-square-facebook" style={{ fontSize: "2rem", color: "#1877F2" }}></i>
-  </a>
-  <a href="https://www.instagram.com/fullcolorpi/" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-square-instagram" style={{ fontSize: "2rem", color: "#E4405F" }}></i>
-  </a>
-  <a href="https://www.tiktok.com/@fullcolorpi" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-tiktok" style={{ fontSize: "2rem", color: "#000000" }}></i>
-  </a>
-  <a href="https://www.youtube.com/c/FullColorPI" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-square-youtube" style={{ fontSize: "2rem", color: "#FF0000" }}></i>
-  </a>
-  <a href="https://www.threads.net/@fullcolorpi" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-threads" style={{ fontSize: "2rem", color: "#000000" }}></i>
-  </a>
-  <a href="https://x.com/fullcolorpi" target="_blank" rel="noopener noreferrer">
-    <i className="fa-brands fa-x-twitter" style={{ fontSize: "2rem", color: "#000000" }}></i>
-  </a>
-  <a href="https://g.page/fullcolorpi" target="_blank" rel="noopener noreferrer">
-    <i className="fa-solid fa-location-dot" style={{ fontSize: "2rem", color: "#EA4335" }}></i>
-  </a>
-</div>
+            <ContentSection title={"Encuéntranos en nuestras redes:"} description={ <div className="social-icons">
+      <a href="https://www.facebook.com/fullcolorpi/" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-square-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/fullcolorpi/" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-square-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@fullcolorpi" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com/c/FullColorPI" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-square-youtube"></i>
+      </a>
+      <a href="https://www.threads.net/@fullcolorpi" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-threads"></i>
+      </a>
+      <a href="https://x.com/fullcolorpi" target="_blank" rel="noopener noreferrer">
+        <i className="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://g.page/fullcolorpi" target="_blank" rel="noopener noreferrer">
+        <i className="fa-solid fa-location-dot"></i>
+      </a>
+    </div>
 }  image={"../assets/img/redes.jpg"} />
             {/* Content section 3 */}
-            <ContentSection position={"right"} title={"Sorteos"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."} image={"../assets/img/sorteos.jpg"} />
+            <ContentSection position={"right"} title={"Sorteos"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati."} image={"../assets/img/sorteos.png"} />
             {/* Footer */}
             <Footer />
 
