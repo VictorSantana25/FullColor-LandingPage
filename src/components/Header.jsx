@@ -6,22 +6,25 @@ const Header = (props) => {
         <header className="masthead text-center text-white" id='page-top'>
             <div className="masthead-content">
                 <div className="container px-5">
-                    <h1 className="masthead-heading mb-0">{props.title}</h1>
-                    <h2 className="masthead-subheading mb-0">{props.subtitle}</h2>
+                    <div className="row">
+                        <div className="col-md-4">
+                            {/* Columna izquierda (4 espacios) */}
+                            <h1 className="masthead-heading mb-0 ">{props.title}</h1>
+                        </div>
+                        <div className="col-md-8">
+                            {/* Columna derecha (restante) */}
+                            <h2 className="masthead-subheading mb-0 fs-4 text-wrap">{props.subtitle}</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="bg-circle-1 bg-circle"></div>
-            <div className="bg-circle-2 bg-circle"></div>
-            <div className="bg-circle-3 bg-circle"></div>
-            <div className="bg-circle-4 bg-circle"></div>
         </header>
     )
 }
 
 Header.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.object.isRequired,
     subtitle: PropTypes.string.isRequired,
-    btninfo: PropTypes.object.isRequired
 }
 
 export default Header

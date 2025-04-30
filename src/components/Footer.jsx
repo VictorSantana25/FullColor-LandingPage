@@ -7,10 +7,15 @@ const Footer = () => {
                 <p className="m-0 text-white small">
                     Copyright &copy; {currentYear}
                 </p>
+
                 <div className="d-flex align-items-center">
+                    <a href="https://g.page/fullcolorpi" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-solid fa-location-dot" style={{ marginRight: "1.5rem", fontSize: "1.5rem", color:"red" }}></i>
+                    </a>
                     <i className="fa fa-envelope text-white" style={{ marginRight: "0.5rem" }}></i>
-                    <a href="mailto:example@email.com" className="text-white small">example@email.com</a>
+                    <a href="mailto:fullcolorpi@yahoo.com" className="text-white small">fullcolorpi@yahoo.com</a>
                 </div>
+
             </div>
         </footer>
     );
