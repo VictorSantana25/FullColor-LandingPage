@@ -1,3 +1,6 @@
+body{
+  font-family: 'Calibri', sans-serif;
+}
 html {
   scroll-padding-top: 67px;
 }
@@ -59,14 +62,14 @@ html {
 }
 
 header.masthead {
-  height: 85vh;
+  height: 90%;
   position: relative;
   overflow: hidden;
   padding-top: 0;
   margin-top: 88px;
-  width: 100vw;
+  width: 100%;
   padding-bottom: 7rem;
-  background-image: url(../assets/img/PERFIL1.jpg);
+  background-image: url(../assets/img/escritorio.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -84,6 +87,8 @@ header.masthead .masthead-content .masthead-heading {
 
 header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
+  text-align: justify;
+  transform: translate(10%, -30%);
 }
 
 .modal.fade-custom {
@@ -127,13 +132,10 @@ header.masthead .masthead-content .masthead-subheading {
   text-align: center;
 }
 
-.content-section:nth-of-type(3) {
+.content-section:nth-of-type(3), .content-section:nth-of-type(1) {
   text-align: center;
 }
 
-.content-section:nth-of-type(1) {
-  text-align: center;
-}
 
 .social-buttons {
   display: grid;
@@ -146,8 +148,10 @@ header.masthead .masthead-content .masthead-subheading {
 .social-btn {
   display: flex;
   align-items: center;
-  padding: 0.2rem 1rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
+  background-color: #000080;
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
@@ -181,9 +185,38 @@ header.masthead .masthead-content .masthead-subheading {
 .twitter { background-color: #1DA1F2; }
 
 .social-btn:hover {
+  background-color: #3333cc;
   transform: translateY(-3px);
 }
 
+@media (max-width: 767.98px) {
+
+  .navbar-custom{
+    height: 88px;
+  }
+  
+  .social-buttons{
+    transform: translateX(-21%);
+  }
+
+  .overlay-image {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+ 
+  .masthead-subheading {
+    transform: none;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+}
 
 
 @media (min-width: 992px) {
