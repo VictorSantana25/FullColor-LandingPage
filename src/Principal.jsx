@@ -200,7 +200,7 @@ const Principal = () => {
           </div>
         </div>
       </div>
-      } image={"../assets/img/SORTEOS.png"} backgroundImageUrl="../assets/img/ESCRITORIO0.jpg" />
+      } image={"../assets/img/sorteos.png"} backgroundImageUrl="../assets/img/ESCRITORIO0.jpg" />
       {/* Footer */}
       <Footer />
 
