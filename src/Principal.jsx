@@ -185,7 +185,7 @@ const Principal = () => {
           {/* Columna izquierda */}
           <div className="col-6 d-flex flex-column gap-3">
             <h5 className="fst-italic">Activos</h5>
-            <a href="https://sorteos.fullcolorpi.com/motosorteoextremo" target="_blank" className="btn btn-outline-secondary social-btn text-wrap px-2">Moto Sorteo Extremo 2025</a>
+            <a href="https://sorteos.fullcolorpi.com/motosorteoextremo" target="_blank" className="btn btn-outline-secondary social-btn text-wrap text-center">Moto Sorteo Extremo 2025</a>
             <a href="" target="_blank" className="btn btn-outline-secondary social-btn"></a>
             <a href="" target="_blank" className="btn btn-outline-secondary social-btn"></a>
           </div>
@@ -193,10 +193,10 @@ const Principal = () => {
           {/* Columna derecha */}
           <div className="col-6 d-flex flex-column gap-3">
             <h5 className="fst-italic">Finalizados</h5>
-            <a href="https://sorteos.fullcolorpi.com/gane10millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 10 millones</a>
-            <a href="https://sorteos.fullcolorpi.com//sorteo12millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 12 millones</a>
-            <a href="https://sorteos.fullcolorpi.com/sorteo28millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 28 millones</a>
-            <a href="https://sorteos.fullcolorpi.com/sorteo15millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 15 millones</a>
+            <a href="https://sorteos.fullcolorpi.com/gane10millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 10 Millones</a>
+            <a href="https://sorteos.fullcolorpi.com//sorteo12millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 12 Millones</a>
+            <a href="https://sorteos.fullcolorpi.com/sorteo28millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 28 Millones</a>
+            <a href="https://sorteos.fullcolorpi.com/sorteo15millones" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Sorteo 15 Millones</a>
           </div>
         </div>
       </div>

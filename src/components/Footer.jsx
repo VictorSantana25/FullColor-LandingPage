@@ -13,7 +13,7 @@ const Footer = () => {
                         <i className="fa-solid fa-location-dot" style={{ marginRight: "1.5rem", fontSize: "1.5rem", color:"red" }}></i>
                     </a>
                     <i className="fa fa-envelope text-white" style={{ marginRight: "0.5rem" }}></i>
-                    <a href="mailto:fullcolorpi@yahoo.com" className="text-white small">fullcolorpi@yahoo.com</a>
+                    <a href="mailto:fullcolorpi@yahoo.com" className="text-white small">fullcolorpi@gmail.com</a>
                 </div>
 
             </div>
