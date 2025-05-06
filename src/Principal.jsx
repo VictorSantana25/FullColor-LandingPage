@@ -185,7 +185,7 @@ const Principal = () => {
           {/* Columna izquierda */}
           <div className="col-6 d-flex flex-column gap-3">
             <h5 className="fst-italic">Activos</h5>
-            <a href="https://sorteos.fullcolorpi.com/motosorteoextremo" target="_blank" className="btn btn-outline-secondary social-btn text-wrap text-center">Moto Sorteo Extremo 2025</a>
+            <a href="https://sorteos.fullcolorpi.com/motosorteoextremo" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center text-wrap ">Moto Sorteo Extremo 2025</a>
             <a href="" target="_blank" className="btn btn-outline-secondary social-btn"></a>
             <a href="" target="_blank" className="btn btn-outline-secondary social-btn"></a>
           </div>
