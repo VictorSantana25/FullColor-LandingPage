@@ -19,7 +19,7 @@ const ContentSection = ({ title, description, image, position = "left", backgrou
                     <div className={"col-lg-6 order-lg-" + (position === "right" ? "1" : "2")}>
                         <div className="p-5">
                             <h2 className="display-5 fw-bold fst-italic">{title}</h2>
-                            <p>{description}</p>
+                            <div>{description}</div>
                         </div>
                     </div>
                 </div>
