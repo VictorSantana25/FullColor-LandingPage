@@ -184,14 +184,12 @@ const Principal = () => {
         <div className="row g-3">
           {/* Columna izquierda */}
           <div className="col-6 d-flex flex-column gap-3">
-            <h5 className="fst-italic">Activos</h5>
             <a href="https://sorteos.fullcolorpi.com/#eventos" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Activos</a>
             <a href="https://sorteos.fullcolorpi.com/#news" target="_blank" className="btn bg-danger social-btn d-block text-center text-wrap ">Finalizados</a>
           </div>
           
           {/* Columna derecha */}
           <div className="col-6 d-flex flex-column gap-3">
-            <h5 className="fst-italic">Finalizados</h5>
             <a href="https://sorteos.fullcolorpi.com/kwidazo" target="_blank" className="btn btn-outline-secondary social-btn d-block text-center">Llegó el kwidazo</a>
             <a href="https://sorteos.fullcolorpi.com//sorteo12millones" target="_blank" className="btn bg-danger btn-outline-secondary social-btn d-block text-center">Sorteo 12 Millones</a>
             <a href="https://sorteos.fullcolorpi.com/sorteo10millones" target="_blank" className="btn bg-danger btn-outline-secondary social-btn d-block text-center">Sorteo 10 Millones</a>
